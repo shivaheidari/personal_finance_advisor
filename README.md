@@ -1,86 +1,69 @@
-Personal Investment Advisor Agent
+# 💼 Personal Investment Advisor Agent
 
-A conversational, agentic AI system that provides personalized investment advice, risk analysis, and actionable insights based on your portfolio, real-time market data, and the latest financial news. Built with Azure OpenAI, Azure AI Search, and cloud-native services.
+> **An AI-powered financial assistant** that provides personalized investment advice, risk analysis, and actionable insights — powered by **Azure OpenAI**, **Azure AI Search**, and cloud-native services.
 
-Table of Contents
+---
 
-Project Overview
+## 🧭 Table of Contents
+- [📘 Overview](#-project-overview)
+- [✨ Features](#-features)
+- [🏗️ Architecture](#-architecture)
+- [🧰 Tech Stack](#-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [🧪 Usage](#-usage)
+- [🤝 Contributing](#-contributing)
+- [📬 Contact](#-contact)
 
-Features
+---
 
-Architecture
+## 📘 Project Overview
 
-Tech Stack
+**Personal Investment Advisor Agent** is a conversational, agentic AI system that helps you make **smarter investment decisions**.  
+It securely stores your portfolio, analyzes your assets, fetches **real-time financial data**, and provides **explainable recommendations** and **risk assessments** — all through a **chat-based interface**.
 
-Getting Started
+> 💡 *Think of it as your personal financial analyst — available 24/7.*
 
-Usage
+---
 
-Contributing
+## ✨ Features
 
-License
+✅ Securely store and manage your personal investment portfolio (stocks, crypto, etc.)  
+✅ Ask natural-language questions like *“Should I buy Bitcoin?”* and get **explainable**, **data-driven** insights  
+✅ Fetch **real-time news**, analyst reports, and market trends  
+✅ Perform **forecasting** and **pattern recognition** using ML models  
+✅ **Risk analysis** and personalized alerts  
+✅ Modern, **user-friendly web interface** and **REST API** support  
 
-Contact
+---
 
-Project Overview
-Personal Investment Advisor Agent is an AI-powered assistant that helps you make smarter investment decisions. It securely stores your portfolio, analyzes your assets, fetches real-time news and market data, and provides explainable recommendations and risk assessments—all through a conversational interface.
+## 🏗️ Architecture
 
-Features
-Securely store and manage your personal investment portfolio (stocks, crypto, etc.)
 
-Ask questions like “Should I buy bitcoin?” and receive explainable, data-driven advice
+---
 
-Real-time integration with financial news, analyst reports, and market data
+## 🧰 Tech Stack
 
-Forecasting and pattern recognition using ML models
+| Layer | Technology |
+|-------|-------------|
+| **Backend** | Python (FastAPI / Flask) |
+| **Frontend** | Streamlit / React *(optional: Electron for desktop)* |
+| **Cloud** | Azure OpenAI, Azure AI Search, Azure Cosmos DB, Azure Functions |
+| **Data** | External APIs for Stocks, Crypto, Financial News |
+| **DevOps** | Docker, GitHub Actions, Azure App Service |
 
-Risk analysis and personalized alerts
+---
 
-User-friendly web interface and REST API
+## ⚙️ Prerequisites
 
-Tech Stack
-Backend: Python (FastAPI/Flask)
+- 🐍 Python **3.10+**
+- ☁️ Azure account with **OpenAI**, **AI Search**, and **Cosmos DB**
+- 🐳 Docker *(optional for container deployment)*
 
-Frontend: Streamlit or React (optional: Electron for desktop)
+---
 
-Cloud: Azure OpenAI, Azure AI Search, Azure Cosmos DB, Azure Functions
+## 🚀 Getting Started
 
-Data: External APIs for real-time stock/crypto/news
-
-DevOps: Docker, GitHub Actions, Azure App Service
-
-Prerequisites
-Python 3.10+
-
-Azure account with OpenAI, AI Search, and Cosmos DB enabled
-
-Docker (optional, for containerized deployment)
-
-Installation
-1.Clone the repository:
-
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/yourusername/personal-investment-advisor-agent.git
 cd personal-investment-advisor-agent
-
-2.Install dependencies:
-pip install -r requirements.txt
-
-3.Set up environment variables API keys 
-
-4.Run The API locally:
-uvicorn app.main:app --reload
-
-Usage:
-Access the web UI at http://localhost:8501 (if using Streamlit).
-
-Use the REST API endpoints to interact programmatically.
-POST /api/ask
-{
-  "question": "Should I buy bitcoin?",
-  "portfolio": ["AAPL", "TSLA", "BTC"]
-}
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
-
-Contact
-Created by Shiva Heydari — feel free to reach out!
