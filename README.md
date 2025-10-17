@@ -67,3 +67,41 @@ It securely stores your portfolio, analyzes your assets, fetches **real-time fin
 ```bash
 git clone https://github.com/yourusername/personal-investment-advisor-agent.git
 cd personal-investment-advisor-agent
+```
+
+### 2️⃣ Install dependencies
+pip install -r requirements.txt
+
+### 3️⃣ Set up environment variables
+Configure your API keys and Azure credentials in a .env file.
+
+### 4️⃣ Run the API locally
+uvicorn app.main:app --reload
+
+🧪 Usage
+💻 Web Interface
+
+Access the Streamlit UI at:
+👉 http://localhost:8501
+
+🔗 REST API Example
+
+Endpoint: POST /api/ask
+
+{
+  "question": "Should I buy bitcoin?",
+  "portfolio": ["AAPL", "TSLA", "BTC"]
+}
+
+🤝 Contributing
+
+Contributions are welcome! 🙌
+If you have ideas or improvements:
+
+Fork the repo 🍴
+
+Create your feature branch 🌿
+
+Commit your changes 💬
+
+Open a Pull Request 🚀
