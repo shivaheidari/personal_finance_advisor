@@ -9,7 +9,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from services.portfolio import PortfolioService
+from services.portfolio.portfolio import PortfolioService
 
 service = PortfolioService()
 

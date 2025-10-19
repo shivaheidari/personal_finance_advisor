@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from services.portfolio import PortfolioService
+from services.portfolio.portfolio import PortfolioService
 
 app = FastAPI()
 portfolio_service = PortfolioService()
