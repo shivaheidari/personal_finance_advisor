@@ -2,11 +2,6 @@ import os
 from dotenv import load_dotenv
 from azure.cosmos import CosmosClient, exceptions
 
-# Load environment variables
-import os
-from dotenv import load_dotenv
-from azure.cosmos import CosmosClient, exceptions
-
 class PortfolioService:
     def __init__(self):
         load_dotenv()
