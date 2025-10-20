@@ -1,6 +1,8 @@
 """Routes package.
 
-This module re-exports the FastAPI `app` object so that a command
-like `uvicorn app.api.routes:app --reload` works.
+This package exposes route modules. Do not re-export `app` here. The
+FastAPI application instance lives in `app.main`.
 """
-from .portfolio import app  # noqa: F401
+from . import portfolio  # noqa: F401
+
+__all__ = ["portfolio"]

@@ -1,5 +1,10 @@
 from fastapi import FastAPI
-from app.api.routes import portfolio
+
+# Use package-relative imports so this module works when imported as
+# a package (e.g. `uvicorn app.main:app`) and when run with
+# `python -m app.main`.
+from .api.routes import portfolio
+
 app = FastAPI(
     title="My API",
     description="API for portfolio, advisor, alerts, and news services",
@@ -14,3 +19,11 @@ app.include_router(portfolio.router, prefix="/portfolio", tags=["portfolio"])
 @app.get("/")
 def root():
     return {"message": "Welcome to the API"}
+
+
+if __name__ == "__main__":
+    # Programmatic Uvicorn runner for local development.
+    # Run with: python -m app.main
+    import uvicorn
+
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)

@@ -1,0 +1,5 @@
+fastapi>=0.95
+uvicorn[standard]>=0.22
+streamlit>=1.25
+python-dotenv>=1.0
+azure-cosmos>=4.2

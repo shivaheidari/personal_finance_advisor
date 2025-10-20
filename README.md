@@ -78,6 +78,16 @@ Configure your API keys and Azure credentials in a .env file.
 ### 4️⃣ Run the API locally
 uvicorn app.main:app --reload
 
+Alternatively, run the module or the built-in dev runner:
+
+```bash
+# Run with python -m uvicorn
+python -m uvicorn app.main:app --reload
+
+# Or use the built-in runner in app/main.py
+python -m app.main
+```
+
 🧪 Usage
 💻 Web Interface
 
