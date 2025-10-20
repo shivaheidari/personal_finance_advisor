@@ -59,6 +59,18 @@ It securely stores your portfolio, analyzes your assets, fetches **real-time fin
 - ☁️ Azure account with **OpenAI**, **AI Search**, and **Cosmos DB**
 - 🐳 Docker *(optional for container deployment)*
 
+Local dev note
+----------------
+If you don't have Cosmos DB credentials while developing locally you can enable a small in-memory fallback by setting an environment variable:
+
+```bash
+export PFA_DEV_FALLBACK=1
+# or on Windows PowerShell:
+$Env:PFA_DEV_FALLBACK = '1'
+```
+
+When enabled the portfolio service uses an in-memory store so the Streamlit UI and API work without Azure.
+
 ---
 
 ## 🚀 Getting Started
