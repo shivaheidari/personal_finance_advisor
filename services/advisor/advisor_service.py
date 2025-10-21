@@ -13,3 +13,24 @@ orchestrtes rule-based engine and/or AI model calls
 
 """
 
+"""
+Data aggreation 
+
+
+User portfolios
+
+Market data (prices, trends)
+
+User risk profiles
+
+News/sentiment feeds
+
+
+"""
+
+
+"""
+RuleEngine Module
+
+
+"""
